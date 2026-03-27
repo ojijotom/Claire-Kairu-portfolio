@@ -33,19 +33,42 @@ nav a {
 /* HERO */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
     background: linear-gradient(135deg, #FF9800, #FF5722);
     color: white;
 }
 
+/* PROFILE PICTURE */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+/* BUTTONS */
 .btn {
     display: inline-block;
     margin: 10px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: white;
     color: #FF5722;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffe0b2;
 }
 
 /* GENERAL SECTIONS */
@@ -125,10 +148,15 @@ footer {
     }
 
     .hero {
-        padding: 60px 20px;
+        padding: 80px 20px;
     }
 
     form input, form textarea {
         width: 100%;
+    }
+
+    .profile-pic {
+        width: 140px;
+        height: 140px;
     }
 }
